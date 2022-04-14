@@ -4,32 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Hola Mundo</title>
+    <title>Ángeland</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="images/logo-dark.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <img src="https://placekitten.com/1200/400" alt="gatitos">
-    </header>
-    <nav>
-        <ul>
-            <li>Link 1</li>
-            <li>Link 2</li>
-        </ul>
-    </nav>
-    <main>
-        <h1>Hola mundo</h1>
-        <section>
-            <article>
-                <h2>Titulo</h2>
-                <img src="https://placekitten.com/1200/400" alt="gatitos2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum, ea omnis optio repellat fugiat, hic asperiores perspiciatis fuga saepe sunt nisi provident vel. Autem dicta quisquam, quasi accusantium voluptatem voluptatum quae reiciendis saepe labore numquam corrupti delectus! Dolor, dolore.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eum, ea omnis optio repellat fugiat, hic asperiores perspiciatis fuga saepe sunt nisi provident vel. Autem dicta quisquam, quasi accusantium voluptatem voluptatum quae reiciendis saepe labore numquam corrupti delectus! Dolor, dolore.</p>
-            </article>
-        </section>
-    </main>
-    <footer>
-        Esto es el footer
-    </footer>
+
+<body id="inicio-page">
+    <div class="wrapper">
+
+        <!-- Cabecera con navegación -->
+        <header classs="main-header">
+            <div class="header__logo">
+                <a href="index.html"><img class="logo" src="images/logo-dark.png" alt="Logo Ángeland.es"></a>
+            </div>
+
+            <nav class="menu">
+                <input type="checkbox" id="active">
+                <label for="active" class="menu-btn"><span></span></label>
+                <label for="active" class="close"></label>
+                <div class="menu__menu-box">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/about.html">About</a></li>
+                        <li><a href="pages/portfolio.html">Portfolio</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
+                        <li><a href="pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Contenido principal -->
+        <main class="contenido">
+            <div class="intro">
+            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, dignissimos officiis.</h1>
+            <a href="pages/about.html"><img src="images/flecha.png" alt="Flecha enlace a About"></a>
+            </div>
+            
+            <div class="enlaces-inicio-secciones">
+                <ul>
+                    <li><a href="./pages/about.html">Algo más sobre mí</a></li>
+                    <li><a href="./pages/portfolio.html">¿Quieres ver mi trabajo?</a></li>
+                    <li><a href="./pages/blog.html">Aquí cuento cosas que pueden interesarte</a></li>
+                    <li><a href="./pages/contacto.html">¿Hablamos de tu proyecto?</a></li>
+                </ul> 
+            </div>
+
+            <!-- Últimos trabajos -->
+            <h2>Últimos proyectos</h2>
+            <div class="ultimos-trabajos">
+                <div class="ultimos-trabajos__item t01"><a href="portfolio/portfolio-single.html">Proyecto 01</a></div>
+                <div class="ultimos-trabajos__item t02"><a href="portfolio/portfolio-single.html">Proyecto 02</a></div>
+                <div class="ultimos-trabajos__item t03"><a href="portfolio/portfolio-single.html">Proyecto 03</a></div>
+                <div class="ultimos-trabajos__item t04"><a href="portfolio/portfolio-single.html">Proyecto 04</a></div>
+            </div>
+            <hr>
+            <!-- Últimas noticias -->
+            <h2>Último en el blog</h2>
+            <div class="ultimas-noticias">
+                <div class="ultimas-noticias__item n01"><a href="blog/blog-single.html"></a></div>
+                <div class="ultimas-noticias__item n02"><a href="blog/blog-single.html"></a></div>
+                <div class="ultimas-noticias__item n03"><a href="blog/blog-single.html"></a></div>
+            </div>
+
+        </main>
+        <!-- Pie de página -->
+        <footer>
+            <section class="enlaces-redes">
+                <a href="https://instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="Linkedin"></a>
+                <a href="https://whatsapp.com/" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            </section>
+
+            <section class="bottom">
+                <div class="bottom__inner">
+                    Copyright © Ángeland | <a href="./pages/about.html">About</a> | <a href="#">Aviso Legal</a> | <a href="#">Política de Cookies</a> | <a href="#">Política de Privacidad</a> 
+                </div>
+            </section>
+        </footer>
+    </div>
+
 </body>
 </html>
