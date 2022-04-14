@@ -20,6 +20,10 @@ header{
     max-height: 65px;
     margin-left:30px;
 }
+.header__logo img:hover {
+    rotate: 360deg;
+    transition: all 0.4s ease-in-out;
+}
 header{
     position: sticky;
     top:0px;
@@ -385,7 +389,8 @@ section.enlaces-redes{
 }
 .ultimos-trabajos__item:hover, .ultimas-noticias__item:hover {
     opacity: 0.5;
-    transition: all 1s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    transform: translate(0px,-5px);
 } 
   
 
