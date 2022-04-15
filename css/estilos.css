@@ -8,6 +8,9 @@ body {
     font-family: "Montserrat", sans-serif;
     background-image: url("../images/patterns/ep_naturalwhite.png");
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+}
 main{
     background-color:#ffffff;
     padding:20px;
@@ -51,9 +54,41 @@ a {
     color:#000;
     text-decoration:none;
 }
+main a:hover, footer a:hover{
+    color:#444;
+}
 hr {
     border: 1px dashed #fff;
     margin: 50px 0;
+}
+.icono-social {
+    /* font-size: 1rem;  */
+    width: 28px;
+    height: 29px;
+    color: #fff;
+    padding:6px;
+    border-radius:50px;
+    background-color:#000;
+    margin-top:5px;
+    display:inline-block;
+}
+.icono-whatsapp {
+    /* font-size: 1rem;  */
+    width: 28px;
+    height: 29px;    
+    color: #fff;
+    padding:6px;
+    border-radius:50px;
+    background-color:green;
+    margin-top:5px;
+    display:inline-block;
+}
+[class^="bi-"]::before, [class*=" bi-"]::before {
+    vertical-align: 0.05em !important;
+}
+.enlaces-redes i:hover{
+    opacity: 0.6;
+    transition: all 0.4s ease-in-out;
 }
 
 /* Estilos MENU ********************************* */
@@ -143,8 +178,11 @@ hr {
   nav ul li {
     text-transform: uppercase;
   }
+  nav ul li a{
+    color:#fff !important;
+  }
   nav ul li a:hover {
-    color:#fadde1;
+    color:#fadde1 !important;
     text-decoration: none;
   }
   .menu__menu-box ul{
@@ -282,16 +320,16 @@ section.enlaces-redes{
 .intro {
     max-width: 65%;
 }
-.ultimos-trabajos{
+/* .ultimos-trabajos{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 10px;
-}
+} */
 .ultimos-trabajos__item {
-    border:1px solid pink;
-    width: 100%;
+    /* border:1px solid pink; */
+    /* width: 100%; */
     height: 400px;
     display: flex;
     flex-flow: column nowrap;
@@ -299,7 +337,7 @@ section.enlaces-redes{
     align-items: center;
     text-align: center;
 } 
-.ultimos-trabajos__item:first-child {
+/* .ultimos-trabajos__item:first-child {
     margin: 0px 5px 0 0;
 }
 .ultimos-trabajos__item:nth-child(2) {
@@ -310,7 +348,7 @@ section.enlaces-redes{
 }
 .ultimos-trabajos__item:last-child {
     margin: 0 0 0 5px;
-}
+} */
 .t01{
     background-image: url("../images/img-wireframe.jpg");
     background-position: center;
@@ -417,7 +455,7 @@ section.enlaces-redes{
         display: flex;
         flex-flow: row wrap;
     }
-    .ultimos-trabajos__item:first-child {
+    /* .ultimos-trabajos__item:first-child {
         margin: 0 0 5px 0;
     }
     .ultimos-trabajos__item:nth-child(2) {
@@ -428,7 +466,7 @@ section.enlaces-redes{
     }
     .ultimos-trabajos__item:last-child {
         margin: 5px 0 0 0;
-    }
+    } */
     .ultimas-noticias{
         display: flex;
         flex-flow: row wrap;
