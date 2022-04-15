@@ -760,3 +760,20 @@ textarea {
         grid-template-columns: repeat(4, 1fr); 
     }
 }
+
+/* Animaciones de entrada para las páginas */
+
+body {
+    animation: fadein 2s;
+}
+@keyframes fadein {
+    0%{
+        opacity:0;
+    } 
+    50%{
+        opacit:0.5;
+    }
+    100%{
+        opacity:1;
+    }
+}
