@@ -12,8 +12,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat", sans-serif;
 }
 main{
-    background-color:#ffffff;
+    /* background-color:#ffffff; */
     padding:20px;
+}
+#portfolio-single .container {
+    margin-bottom: 100px;
 }
 header{
     padding: 20px;
@@ -275,7 +278,7 @@ hr {
 .main-header{
     grid-area:header;
 }
-.contenido{
+#inicio-page .contenido{
     grid-area: contenido;
 }
 .menu{
