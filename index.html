@@ -42,40 +42,81 @@
         </header>
 
         <!-- Contenido principal -->
-        <main class="contenido">
-            <div class="intro">
-            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, dignissimos officiis.</h1>
-            <a href="pages/about.html"><img src="images/flecha.png" alt="Flecha enlace a About"></a>
-            </div>
-            
-            <div class="enlaces-inicio-secciones">
-                <ul>
-                    <li><a href="./pages/about.html">Algo más sobre mí</a></li>
-                    <li><a href="./pages/portfolio.html">¿Quieres ver mi trabajo?</a></li>
-                    <li><a href="./pages/blog.html">Aquí cuento cosas que pueden interesarte</a></li>
-                    <li><a href="./pages/contacto.html">¿Hablamos de tu proyecto?</a></li>
-                </ul> 
-            </div>
+        <main class="container">
+            <div class="row">
 
-            <!-- Últimos trabajos -->
-            <h2>Últimos proyectos</h2>
-            <div class="container">
-                <div class="ultimos-trabajos row">
-                    <div class="ultimos-trabajos__item t01 col-md-3 col-sm-12"><a href="pages/portfolio-single-bootstrap.html">Proyecto 01</a></div>
-                    <div class="ultimos-trabajos__item t02 col-md-3 col-sm-12"><a href="pages/portfolio-single-bootstrap.html">Proyecto 02</a></div>
-                    <div class="ultimos-trabajos__item t03 col-md-3 col-sm-12"><a href="pages/portfolio-single-bootstrap.html">Proyecto 03</a></div>
-                    <div class="ultimos-trabajos__item t04 col-md-3 col-sm-12"><a href="pages/portfolio-single-bootstrap.html">Proyecto 04</a></div>
+                <div class="intro">
+                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, dignissimos officiis.</h1>
+                <a href="pages/about.html"><img src="images/flecha.png" alt="Flecha enlace a About"></a>
+                </div>
+
+                <!-- Carousel -->
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <!-- <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div> -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/img-wireframe.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Algo más sobre mí</h5>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/img-wireframe.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>¿Quieres ver mi trabajo?</h5>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/img-wireframe.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Aquí cuento cosas que pueden interesarte</h5>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/img-wireframe.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>¿Hablamos de tu proyecto?</h5>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+                <!-- Fin Carousel -->
+
+                <!-- Últimos trabajos -->
+                <h2>Últimos proyectos</h2>
+                <div class="container">
+                    <div class="ultimos-trabajos row">
+                        <div class="ultimos-trabajos__item t01 col-md-3 col-sm-12"><a href="pages/portfolio-single-bootstrap.html">Proyecto 01</a></div>
+                        <div class="ultimos-trabajos__item t02 col-md-3 col-sm-12"><a href="pages/portfolio-single-bootstrap.html">Proyecto 02</a></div>
+                        <div class="ultimos-trabajos__item t03 col-md-3 col-sm-12"><a href="pages/portfolio-single-bootstrap.html">Proyecto 03</a></div>
+                        <div class="ultimos-trabajos__item t04 col-md-3 col-sm-12"><a href="pages/portfolio-single-bootstrap.html">Proyecto 04</a></div>
+                    </div>
+                </div>
+
+                <!-- Últimas noticias -->
+                <h2>Último en el blog</h2>
+                <div class="ultimas-noticias">
+                    <div class="ultimas-noticias__item n01"><a href="pages/blog-single.html">Blog 1</a></div>
+                    <div class="ultimas-noticias__item n02"><a href="pages/blog-single.html">Blog 2</a></div>
+                    <div class="ultimas-noticias__item n03"><a href="pages/blog-single.html">Blog 3</a></div>
                 </div>
             </div>
-            <hr>
-            <!-- Últimas noticias -->
-            <h2>Último en el blog</h2>
-            <div class="ultimas-noticias">
-                <div class="ultimas-noticias__item n01"><a href="pages/blog-single.html">Blog 1</a></div>
-                <div class="ultimas-noticias__item n02"><a href="pages/blog-single.html">Blog 2</a></div>
-                <div class="ultimas-noticias__item n03"><a href="pages/blog-single.html">Blog 3</a></div>
-            </div>
-
         </main>
         <!-- Pie de página -->
         <footer>
